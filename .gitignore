@@ -1,0 +1,131 @@
+# .gitignore for Python projects using venv
+
+# --- Virtual Environment ---
+# Ignore the virtual environment directory created by `python -m venv <name>`
+# Common names are venv, .venv, env, .env. Adjust if you use a different name.
+/venv/
+/.venv/
+/env/
+/.env/
+
+# Include devenv/ if using nox-poetry https://nox-poetry.readthedocs.io/en/stable/config.html#package-installs-into-a-devenv-virtualenv
+# devenv/
+
+# Include .nox/ if using nox https://nox.thea.codes/en/stable/usage.html#understanding-nox-s-managed-environments
+# .nox/
+
+# Include .tox/ if using tox https://tox.wiki/en/latest/development.html#understanding-tox-s-managed-environments
+# .tox/
+
+# --- Bytecode and Compiled Files ---
+# Python cache files and byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Distribution / Packaging ---
+# Distribution / build artifacts
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Usually these files are written by a CI script
+# and aren't committed tokta the repository.
+*.manifest
+*.spec
+
+# --- Testing ---
+# Pytest cache and reporting directory
+.pytest_cache/
+pytestdebug.log
+pytest-results.xml
+
+# Coverage reports
+.coverage
+.coverage.*
+/htmlcov/
+nosetests.xml
+coverage.xml
+
+# --- IDEs / Editors ---
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- OS Specific Files ---
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Secrets / Environment Variables ---
+# Environment variables - NEVER commit sensitive files!
+.env
+.env.*
+!.env.example
+!.env.template
+secrets.*
+*.pem
+*.key
+venv/
+__pycache__/
+*.pyc
+
+# --- Other ---
+# Instance folder (e.g., Flask, Django specific configurations)
+/instance/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Log files
+*.log
+logs/
+
+# Local databases (if not part of the essential repo setup)
+*.sqlite3
+*.db
+*.db3
+
+# Temporary files
+*.swp
+*~
+*.bak
+*.tmp
+
+# Celery files (if applicable)
+celerybeat-schedule.*
+
+# Add any project-specific generated files or data directories below
+# /data/
+# /media/.venv/
+.envrc
+node_modules/
+.next/
+
+# context
+.context/
