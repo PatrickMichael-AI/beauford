@@ -1,0 +1,3 @@
+# Beauford is a TypeScript/npm CLI project.
+# This file is intentionally empty because the local .venv has no Python
+# runtime dependencies to reproduce.

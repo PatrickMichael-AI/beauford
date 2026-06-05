@@ -1,0 +1,86 @@
+# Master Build Prompt Template
+
+```markdown
+# Building Beauford
+
+**Prompt ID:** BEA-1
+**Dependencies:**
+**Estimated Tokens:** 1000 - 1500
+**Output Files:** docs/beauford/beauford.build.plan.md
+**Framework:**
+
+**Purpose:** To build Beauford.
+
+# Context
+
+We are building Beauford, which is our own agentic Terminal UI coding harness. Beauford initial build is based on the files in .context/beauford/ which is a local copy of [The Emperor Has No Clothes](https://www.mihaileric.com/The-Emperor-Has-No-Clothes/).
+
+You will understand the source (Input Context) and then initiate the build witht the Initial Prompt.
+
+## Initial Prompt
+
+Create a Terminal UI following the philosophy of Input Context and the rules of [The Emperor Has No Clothes](https://www.mihaileric.com/The-Emperor-Has-No-Clothes/). Our tool is called Beauford. Instead of using Python, use Typescript. Users will npm install the CLI tool and they shold be able to start the tool running the command `beauford`. For all AI inferences, user should be able to log in with their OpenAI API key.
+
+Our OpenAI API (OPENAI_API_KEY) key is available via direenv.
+
+## Input Context - Read These Files
+
+**Source Files:**
+.context/beauford/
+
+# Task
+
+1. Read and understand the source files.
+2. Create a plan to build Beauford usitn the Initial Prompt as the initiation point.
+4. Use the `phased-checklist-from-plan` skill to create a phased checklist from the plan.
+5. Rate the output using the Quality Rubric below.
+7. Output using format below.
+
+# Output
+
+## Quality Rubric
+
+Rate your own output before submitting to ensure it meets the Patrick Michael Sovereign Stack elite standard. Target Score must be 9/10 or higher.
+
+**Structure & Alias Plan Document (3 points):**
+
+- [ ] **Scope Boundary:** The plan stays scoped to replacing non–natural-language `compiled_prompt` fragments (preset/composition identifiers such as `Composition mode: typography_centered`) with operator-facing **`prompt_alias`** text, and does not drift into unrelated inbox, LinkedIn, Drupal, or capture work except where image generation already depends on the compiled string.
+- [ ] **Output Pathing/Formatting:** The output strictly follows the `<begin output format LOCAL ENVIRONMENT ONLY>` wrapper and writes to `docs/leonardo/leonardo.aliased_presets.plan.md[output]` (slug `leonardo.aliased_presets.plan.md`), not another Leonardo plan path.
+- [ ] **Plan Shape:** The document separates **current compile behavior** (technical shell tokens in `compiled_prompt`) from **target alias contract** (matrix-driven natural language) from **phased implementation** with file touchpoints and verification—not a generic “improve prompts” essay.
+
+**Content & Alias Matrix Grounding (4 points):**
+
+- [ ] **Required Input Reads:** The plan demonstrably synthesizes `docs/leonardo/leonardo.flat-vector-tldr-prompt-lead.plan.md`, `docs/leonardo/leonardo.text-only-tldr-prompt-lead.plan.md`, and `docs/user-manuals/cursor-sub-agent-delegation.user-manual.md` so new aliases align with shipped `prompt_lead` behavior and sub-agent execution rules.
+- [ ] **Prompt Alias Matrix Coverage:** Every row in Context’s **Prompt Alias Matrix** is carried into the plan with the exact alias copy (`typography_centered` → centre-aligned typography; `typography_accent_highlight` → accent highlighted key phrase), and the plan states how additional preset/composition tokens will be discovered and aliased beyond the seed matrix.
+- [ ] **Compile Path Touchpoints:** The plan names where technical tokens are emitted today (e.g. `buildFlatVectorTldrExactVisibleBriefParts` / `buildTextOnlyTldrExactVisibleBriefParts`, `Composition mode: {compositionId}` in `lib/image-prompt.ts`) and how alias substitution preserves preview/save/generate parity on the controlled `/content/today` path.
+- [ ] **Planner & Checklist Protocol:** The plan requires `cursor-feature-planner` (`gpt-5.5-medium`) for design, parent-only orchestration per the delegation manual, implementation/review Tasks for phases, and an appended **Phased Checklist** produced with the `phased-checklist-from-plan` skill (phase tracker + checkbox items).
+
+**Completeness & Protocol (3 points):**
+
+- [ ] **Traceability & Tests:** Each implementation phase maps to affected files (compiler, types if needed, tests such as `tests/image-prompt.test.ts`), and verification steps assert compiled output contains alias text instead of raw `Composition mode:` / preset id clauses where aliasing applies.
+- [ ] **Operational Guardrails:** The plan preserves PM_I-8 invariants—exact visible-grid compile, `prompt_lead` openers for TLDR presets, no silent truncation, backend-only secrets, and no weakening of save/generate eligibility rules when swapping alias text.
+- [ ] **Self-Evaluation Execution:** This Quality Matrix is applied to the drafted plan with binary checkmarks and meets the `9/10 or higher` threshold before **Sequence Complete**.
+
+**Output Target Score: 9/10 or higher**
+
+<begin output format LOCAL ENVIRONMENT ONLY>
+# beauford.build.plan.md
+
+Output to docs/beauford/beauford.build.plan.md[output]
+</end output format LOCAL ENVIRONMENT ONLY>
+
+<begin output format ONLINE ENVIRONMENT ONLY>
+
+NA
+
+</end output format ONLINE ENVIRONMENT ONLY>
+
+**Sequence Complete** [Output confirmation]
+
+</end output format>
+
+# Notes
+
+- The quality of your output is vital
+- Before outputting, ask if this is best
+```
