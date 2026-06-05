@@ -19,9 +19,12 @@
 - Use the best model for the task - premium models for complex tasks (like coding) and mid-tier models for simpler tasks, like documentation
 - After completing features (large or small), always run commands like lint, type check and next build to check code quality
 
+## ENVIRONMENT
+
+- Environment variables are provided via direnv; do not expect or create a project `.env` file.
+
 ## SUB-AGENT DELEGATION
 
-- In tools that support explicit agent/model selection, always specify both the Beauford sub-agent and the intended model.
 - Use `beauford-feature-planner` for planning/checklists, `beauford-implementation-engineer` for code changes, and `beauford-senior-code-reviewer` for review.
 - Keep the parent agent as the orchestrator: delegate code changes, fix rounds, and review passes instead of doing them in the parent context.
 - On reviewer FAIL, send only the must-fix list to a new implementation sub-agent, then run a new senior-review pass. Repeat until PASS.

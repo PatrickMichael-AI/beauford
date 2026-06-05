@@ -125,7 +125,11 @@ celerybeat-schedule.*
 # /media/.venv/
 .envrc
 node_modules/
+.npm-cache/
+.tmp-global/
 .next/
+/dist/
+*.tsbuildinfo
 
 # context
 .context/

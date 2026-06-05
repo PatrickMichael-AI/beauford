@@ -1,0 +1,34 @@
+{
+  "name": "beauford",
+  "version": "0.1.0",
+  "description": "Agentic Terminal UI coding harness inspired by The Emperor Has No Clothes.",
+  "type": "module",
+  "bin": {
+    "beauford": "./dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.d.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "!dist/**/*.test.*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "npm run build && node --test dist/**/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "openai": "^6.42.0"
+  }
+}

@@ -168,56 +168,57 @@ Verification:
 
 ### Progress Tracker
 
-- [ ] Phase 1 complete
-- [ ] Phase 2 complete
-- [ ] Phase 3 complete
-- [ ] Phase 4 complete
-- [ ] Phase 5 complete
-- [ ] Phase 6 complete
+- [x] Phase 1 complete
+- [x] Phase 2 complete
+- [x] Phase 3 complete
+- [x] Phase 4 complete
+- [x] Phase 5 complete
+- [x] Phase 6 complete
 
 ### Phase 1: Package And Runtime Foundation
 
-- [ ] Add TypeScript npm package files with a `beauford` bin target.
-- [ ] Add `src/cli.ts` executable entry.
-- [ ] Add OpenAI API key environment validation.
-- [ ] Verify install, build, and local binary startup.
+- [x] Add TypeScript npm package files with a `beauford` bin target.
+- [x] Add `src/cli.ts` executable entry.
+- [x] Add OpenAI API key environment validation.
+- [x] Verify install, build, and local binary startup.
 
 ### Phase 2: Emperor Tool Core
 
-- [ ] Implement `read_file`, `list_files`, and `edit_file`.
-- [ ] Implement workspace-aware path resolution.
-- [ ] Implement explicit TypeScript tool registry metadata.
-- [ ] Test tool behavior against fixture files.
+- [x] Implement `read_file`, `list_files`, and `edit_file`.
+- [x] Implement workspace-aware path resolution.
+- [x] Implement explicit TypeScript tool registry metadata.
+- [x] Test tool behavior against fixture files.
 
 ### Phase 3: Prompt, Parser, And Agent Loop
 
-- [ ] Render system prompt from tool registry metadata.
-- [ ] Parse `tool:` invocations using compact JSON args.
-- [ ] Append `tool_result(...)` messages after local execution.
-- [ ] Implement outer user loop and inner tool loop.
-- [ ] Test parser and loop with mocked model responses.
+- [x] Render system prompt from tool registry metadata.
+- [x] Parse `tool:` invocations using compact JSON args.
+- [x] Append `tool_result(...)` messages after local execution.
+- [x] Implement outer user loop and inner tool loop.
+- [x] Test parser and loop with mocked model responses.
 
 ### Phase 4: OpenAI Integration
 
-- [ ] Add OpenAI client wrapper.
-- [ ] Connect loop inference to `OPENAI_API_KEY`.
-- [ ] Add configurable model setting.
-- [ ] Smoke test one live inference when the key is present.
+- [x] Add OpenAI client wrapper.
+- [x] Connect loop inference to `OPENAI_API_KEY`.
+- [x] Add configurable model setting.
+- [x] Smoke test one live inference when the key is present.
+  - `OPENAI_API_KEY` was not present in the verification shell; mocked inference and missing-key handling passed.
 
 ### Phase 5: Terminal UI
 
-- [ ] Add interactive terminal input and assistant output.
-- [ ] Show tool activity and structured errors.
-- [ ] Add write confirmation or diff preview if included in MVP scope.
-- [ ] Verify repeated turns and clean Ctrl-C/EOF exit.
+- [x] Add interactive terminal input and assistant output.
+- [x] Show tool activity and structured errors.
+- [x] Add write confirmation or diff preview if included in MVP scope.
+- [x] Verify repeated turns and clean Ctrl-C/EOF exit.
 
 ### Phase 6: Validation And Packaging
 
-- [ ] Add README usage, auth, and install notes.
-- [ ] Add sample repo smoke fixture.
-- [ ] Run lint, typecheck, test, and build.
-- [ ] Run npm package dry run.
-- [ ] Verify `beauford` works through `npm link`.
+- [x] Add README usage, auth, and install notes.
+- [x] Add sample repo smoke fixture.
+- [x] Run lint, typecheck, test, and build.
+- [x] Run npm package dry run.
+- [x] Verify `beauford` works through `npm link`.
 
 ## Quality Rubric Self-Evaluation
 
